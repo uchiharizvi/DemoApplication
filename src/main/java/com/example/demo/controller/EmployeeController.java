@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ApplicationController {
-    @GetMapping("/users")
-    public Users getUsers() {
+public class EmployeeController {
+    @GetMapping("/employee/details")
+    public Users getEmployeeDetails() {
         return new Users();
     }
-    @PostMapping("/register")
-    public String registerUser(@RequestBody String payload){
+    @PostMapping("/employee/register")
+    public String registerEmployee(@RequestBody String payload){
         return "Registered";
     }
 }
