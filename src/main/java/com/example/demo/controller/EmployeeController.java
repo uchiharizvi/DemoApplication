@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.model.request.RegisterUser;
-import com.example.demo.model.request.Users;
+import com.example.demo.model.response.Users;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,8 +13,9 @@ public class EmployeeController {
     public Users getEmployeeDetails() {
         return new Users();
     }
+
     @PostMapping("/employee/register")
-    public String registerEmployee(@RequestBody String payload){
+    public String registerEmployee(@RequestBody RegisterUser userRequest) {
         return "Registered";
     }
 }
