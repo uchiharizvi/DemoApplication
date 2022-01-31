@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.example.ems.controller;
 
-import com.example.demo.dao.entity.Employee;
-import com.example.demo.model.response.Users;
-import com.example.demo.service.RegisterService;
+import com.example.ems.dao.entity.Employee;
+import com.example.ems.model.response.Users;
+import com.example.ems.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

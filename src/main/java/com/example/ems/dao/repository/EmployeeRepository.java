@@ -1,6 +1,6 @@
-package com.example.demo.dao.repository;
+package com.example.ems.dao.repository;
 
-import com.example.demo.dao.entity.Employee;
+import com.example.ems.dao.entity.Employee;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

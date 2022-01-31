@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package com.example.ems.service;
 
-import com.example.demo.dao.entity.Employee;
+import com.example.ems.dao.entity.Employee;
 
 public interface RetrievalService {
     Employee getEmployeeDetail(Long id) throws Exception;

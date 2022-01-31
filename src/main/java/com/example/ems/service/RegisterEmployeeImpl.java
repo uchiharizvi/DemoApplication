@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.ems.service;
 
-import com.example.demo.dao.entity.Employee;
-import com.example.demo.dao.repository.EmployeeRepository;
+import com.example.ems.dao.entity.Employee;
+import com.example.ems.dao.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
