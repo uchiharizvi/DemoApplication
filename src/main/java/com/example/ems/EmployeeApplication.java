@@ -7,15 +7,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EmployeeApplication implements CommandLineRunner {
+public class EmployeeApplication {
     private static final Logger log = LoggerFactory.getLogger(EmployeeApplication.class);
-
     public static void main(String[] args) {
         SpringApplication.run(EmployeeApplication.class, args);
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-
     }
 }

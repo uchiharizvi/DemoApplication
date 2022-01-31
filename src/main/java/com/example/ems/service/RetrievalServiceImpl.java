@@ -9,10 +9,11 @@ public class RetrievalServiceImpl implements RetrievalService {
     EmployeeRepository repository;
 
     public Employee getEmployeeDetail(Long id) throws Exception {
-
         return repository.findById(id);
     }
-
+    public Employee getEmployeeDetail(String deptName) throws Exception {
+        return (Employee) repository.findByDeptName(deptName);
+    }
     public Iterable<Employee> getAllEmployees() throws Exception {
         return repository.findAll();
     }
