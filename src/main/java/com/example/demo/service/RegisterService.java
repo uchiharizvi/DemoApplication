@@ -1,7 +1,7 @@
 package com.example.demo.service;
 
-import com.example.demo.dao.entity.RegisterEmployee;
+import com.example.demo.dao.entity.Employee;
 
 public interface RegisterService {
-    String registerEmployee(RegisterEmployee registerEmployee) throws Exception;
+    String registerEmployee(Employee employee) throws Exception;
 }

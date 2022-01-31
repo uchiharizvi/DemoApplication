@@ -1,6 +1,6 @@
 package com.example.demo.controller;
 
-import com.example.demo.dao.entity.RegisterEmployee;
+import com.example.demo.dao.entity.Employee;
 import com.example.demo.model.response.Users;
 import com.example.demo.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/employee/register")
-    public String registerEmployee(@RequestBody RegisterEmployee registerEmployee) throws Exception {
-        return registerService.registerEmployee(registerEmployee);
+    public String registerEmployee(@RequestBody Employee employee) throws Exception {
+        return registerService.registerEmployee(employee);
     }
 }

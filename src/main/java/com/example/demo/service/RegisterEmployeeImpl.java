@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.dao.entity.RegisterEmployee;
+import com.example.demo.dao.entity.Employee;
 import com.example.demo.dao.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,9 +11,9 @@ public class RegisterEmployeeImpl implements RegisterService {
     private EmployeeRepository employeeRepository;
 
     @Override
-    public String registerEmployee(RegisterEmployee registerEmployee) throws Exception {
+    public String registerEmployee(Employee employee) throws Exception {
         try {
-            employeeRepository.save(registerEmployee);
+            employeeRepository.save(employee);
         }catch (Exception e){
             throw new RuntimeException(e.getMessage());
         }
